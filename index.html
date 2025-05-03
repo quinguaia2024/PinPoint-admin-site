@@ -504,14 +504,14 @@
        window.onload = function () {
     const loggedIn = sessionStorage.getItem('loggedIn');
     if (!loggedIn) {
-      window.location.href = 'pages/Auth/Login.html';
+      window.location.href = 'pages/Autentica/Login.html';
     }
   };
     </script>
     <script>
       document.getElementById('logout').addEventListener('click', function () {
         sessionStorage.removeItem('loggedIn');
-        window.location.href = 'pages/Auth/Login.html'; // ou o caminho certo da tua página
+        window.location.href = 'pages/Autentica/Login.html'; // ou o caminho certo da tua página
       });
     </script>
   </body>
