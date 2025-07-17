@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="pt-4">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="../../assets\images\icon.ico.png" type="Logo icon">
+    <title>PinPoint Admin Camama</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../../assets/vendors/ti-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="../../assets/vendors/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href=".assets/vendors/font-awesome/css/font-awesome.min.css" />
+    <link rel="shortcut icon" href="src/assets/images/icon.ico.png" type="image/x-icon">
+    <link rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    
+  </head>
+  <body>
+      <!-- Nav bar -->
+      <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+        
+        <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
+        </div>
+        <div class="navbar-menu-wrapper d-flex align-items-stretch">
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+            <span class="mdi mdi-menu"></span>
+          </button>
+          <ul class="navbar-nav navbar-nav-right">
+            <li class="nav-item nav-profile dropdown">
+              <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="nav-profile-img">
+                  <img src="../../assets/images/Login.jpg" alt="image">
+                </div>
+                <div class="nav-profile-text">
+                  <p class="mb-1 text-black">PinPoint</p>
+                </div>
+              </a>
+              <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
+                <a class="dropdown-item" href="#">
+                  <i class="mdi mdi-cached me-2 text-success"></i>Requisição de serviços </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">
+                  <i class="mdi mdi-logout me-2 text-primary"></i>Assistência técnica</a>
+              </div>
+            </li>
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="mdi mdi-email-outline"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-end navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+                <h6 class="p-3 mb-0">Promoções</h6>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <img src="../../assets/images/Login.jpg" alt="image" class="Logo">
+                  </div>
+                  <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                    <h6 class="preview-subject ellipsis mb-1 font-weight-normal">Assistência técnica</h6>
+                    <p class="text-gray mb-0"> 1 Minuto atrás</p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <img src="../../assets/images/Login.jpg" alt="image" class="Logo">
+                  </div>
+                  <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                    <h6 class="preview-subject ellipsis mb-1 font-weight-normal">Assistência técnica</h6>
+                    <p class="text-gray mb-0"> 2 Semanas atrás </p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <img src="../../assets/images/Login.jpg" alt="image" class="Logo">
+                  </div>
+                  <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                    <h6 class="preview-subject ellipsis mb-1 font-weight-normal">Requisição de serviços</h6>
+                    <p class="text-gray mb-0">5 Semanas atrás </p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <h6 class="p-3 mb-0 text-center">4 Novas mensagens</h6>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-bs-toggle="dropdown">
+                <i class="mdi mdi-bell-outline"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-end navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                <h6 class="p-3 mb-0">Notificações</h6>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-success">
+                      <i class="mdi mdi-calendar"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                    <h6 class="preview-subject font-weight-normal mb-1">Actualizar o estado do posto</h6>
+                    <p class="text-gray ellipsis mb-0">O estado do posto deve ser actualizado pois seu prazo expirou </p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-warning">
+                      <i class="mdi mdi-cog"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                    <h6 class="preview-subject font-weight-normal mb-1">Definições da página</h6>
+                    <p class="text-gray ellipsis mb-0">Actualize seu serviço e tenha acesso</p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-info">
+                      <i class="mdi mdi-link-variant"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                    <h6 class="preview-subject font-weight-normal mb-1">Dicas para Admin</h6>
+                    <p class="text-gray ellipsis mb-0">Visite o nosso site e tenha acesso a </p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <h6 class="p-3 mb-0 text-center">Ver todas as notificações</h6>
+              </div>
+            </li>
+            <li class="nav-item nav-logout d-none d-lg-block">
+              <a class="nav-link" href="dashboard.html">
+                <i class="mdi mdi-power"></i>
+              </a>
+            </li>
+          </ul>
+          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+            <span class="mdi mdi-menu"></span>
+          </button>
+        </div>
+      </nav>
+      <!-- partes sidebar -->
+      <div class="container-fluid page-body-wrapper">
+        <nav class="sidebar sidebar-offcanvas"  id="sidebar">
+<ul class="nav">
+            <li class="nav-item nav-profile">
+              <a href="#" class="nav-link" >
+                <div class="nav-profile-image">
+                  <img src="../../assets/images/faces/face17.jpg" alt="profile" />
+                  <span class="login-status online"></span>
+                </div>
+                <div class="nav-profile-text d-flex flex-column">
+                  <span class="font-weight-bold mb-2">Posto do Camama</span>
+                  <span class="text-secondary text-small">Administrador</span>
+                </div>
+                <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dashboard.html">
+                <span class="menu-title">Dashboard</span>
+                <i class="mdi mdi-home menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                <span class="menu-title">Postos</span>
+                <i class="menu-arrow"></i>
+                <i class="fas fa-gas-pump"></i>
+              </a>
+              <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+                    <a class="nav-link" href="../Postos/PAG.html">Abastecimento á combustível</a>
+                    <a class="nav-link" href="../Postos/PAE.html">Carregamento eléctrico</a>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Mapas/Mapa.html">
+                <span class="menu-title">Mapa</span>
+                <i class="menu-icon"></i>
+                <i class="fas fa-map-marked-alt"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+                <span class="menu-title">Perfil</span>
+                <i class="menu-arrow"></i>
+                <i class="fas fa-user"></i>
+              </a>
+              <div class="collapse" id="auth">
+                <ul class="nav flex-column sub-menu">
+                    <a class="nav-link" href="../Definições/Definições.html">Configurações</a>
+                    <a class="nav-link" id="logout" href="../../index.html">Sair</a>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <!-- Estrutura da Dashboard -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="row">
+              <div class="col-md-4 stretch-card grid-margin">
+                <div class="card bg-gradient-success card-img-holder text-white">
+                  <div class="card-body">
+                    <h4 class="font-weight-normal mb-3">Venda mensal <i class="mdi mdi-chart-line mdi-24px float-end"></i>
+                    </h4>
+                    <h2 class="mb-5">150.000 litros</h2>
+                    <h6 class="card-text">Crescimento de 60%</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 stretch-card grid-margin">
+                <div class="card bg-gradient-success card-img-holder text-white">
+                  <div class="card-body">
+                    <h4 class="font-weight-normal mb-3">Mudança de Status diária<i class="mdi mdi-bookmark-outline mdi-24px float-end"></i>
+                    </h4>
+                    <h2 class="mb-5">13 alterações</h2>
+                    <h6 class="card-text">Diminuiu 10%</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 stretch-card grid-margin">
+                <div class="card bg-gradient-success card-img-holder text-white">
+                  <div class="card-body">
+                    <h4 class="font-weight-normal mb-3">Visitantes do posto diário<i class="mdi mdi-diamond mdi-24px float-end"></i>
+                    </h4>
+                    <h2 class="mb-5">1.453 Visitantes</h2>
+                    <h6 class="card-text">Crescimento de 5%</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-7 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="clearfix">
+                      <h4 class="card-title float-start">Estátistica de vendas & visitas</h4>
+                      <div id="visit-sale-chart-legend" class="rounded-legend legend-horizontal legend-top-right float-end">
+                      </div>
+                    </div>
+                    <canvas id="visit-sale-chart" class="mt-4">
+                    </canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Detalhes gráficos</h4>
+                    <div class="doughnutjs-wrapper d-flex justify-content-center">
+                      <canvas id="traffic-chart"></canvas>
+                    </div>
+                    <div id="traffic-chart-legend" class="rounded-legend legend-vertical legend-bottom-left pt-4">
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 grid-margin">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Ranking de postos da empresa</h4>
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th> Administradores </th>
+                            <th> Posto</th>
+                            <th> Localização</th>
+                             <th> Tipo</th>
+                            <th> Status </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <img src="../../assets/images/faces/face25.jpg" class="me-2" alt="image"> Jorge Viegas
+                            </td>
+                            <td>	Posto TotalEnergies Samba</td>
+                            <td> Praça Central, 45</td>
+                            <td>Abastecimento à gasolina</td>
+                            <td>
+                              <label class="badge badge-gradient-success">Activo</label>
+                            </td> 
+                          </tr>
+                          <tr>
+                            <td>
+                              <img src="../../assets/images/faces/face15.jpg" class="me-2" alt="image">Juliano Pedro
+                            </td>
+                            <td> Posto CVE Kilamba</td>
+                            <td> Distrito Urbano do Kilamba </td>
+                            <td>Abastecimento duplo</td>   
+                             <td>
+                              <label class="badge badge-gradient-warning">Inativo</label>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <img src="../../assets/images/faces/face7.jpg" class="me-2" alt="image">Joel Pacheco
+                            </td>
+                            <td>Posto Camama</td>
+                            <td>Bairro Camama,</td>
+                            <td>Abastecimento à gasolina</td>
+                               <td>
+                              <label class="badge badge-gradient-warning">Inativo</label>
+                               <tr>
+                            <td>
+                              <img src="../../assets/images/faces/face14.jpg" class="me-2" alt="image"> Joaquim Coelho
+                            </td>
+                            <td>Posto de Carregamento SIAC Talatona</td>
+                    
+                            <td>SIAC,Talatona</td>
+                            <td>Carregamento eléctrico</td>
+                             <td>
+                              <label class="badge badge-gradient-info">Em manutenção</label>
+                            </td>
+                          </tr>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-5 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body p-0 d-flex">
+                    <div id="inline-datepicker" class="datepicker datepicker-custom"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Sobre a PinPoint</h4>
+                    <div class="d-flex">
+                      <div class="d-flex align-items-center me-4 text-muted font-weight-light">
+                        <i class="mdi mdi-account-outline icon-sm me-2"></i>
+                        <span>Sobre nós</span>
+                      </div>
+                      <div class="d-flex align-items-center text-muted font-weight-light">
+                        <i class="mdi mdi-clock icon-sm me-2"></i>
+                        <span>serviços</span>
+                      </div>
+                    </div>
+                    <div class="row mt-3">
+                      <div class="col-6 pe-1">
+                        <img src="../../assets/images/Elevando o PP/carro-eletrico-ts4or50xvgvo.webp" class="mb-2 mw-100 w-100 rounded" alt="image">
+                        <img src="../../assets/images/Elevando o PP/Adicionar.webp" class="mw-100 w-100 rounded" alt="image">
+                      </div>
+                      <div class="col-6 ps-1">
+                        <img src="../../assets/images/Elevando o PP/CE (2).jpg" class="mb-2 mw-100 w-100 rounded" alt="image">
+                        <img src="../../assets/images/Elevando o PP/CE1.jpg" class="mw-100 w-100 rounded" alt="image">
+                      </div>
+                    </div>
+                    <div class="d-flex mt-5 align-items-top">
+                      <img src="../../assets/images/icon.ico.png" class="img-sm rounded-circle me-3" alt="image">
+                      <div class="mb-0 flex-grow">
+                        <h5 class="me-2 mb-2">PinPoint-site que localiza bombas de combustível e carregadores elétricos.</h5>
+                        <p class="mb-0 font-weight-light">Facilitando condutores com rotas rápidas e promovendo adoção de veículos elétricos para reduzir CO2.</p>
+                         <p class="mb-0 font-weight-light">Temos uma vasta gama de serviços direcionados para as empresas,impulsionando seu desenvolvimento</p>
+                      </div>
+                      <div class="ms-auto">
+                        <i class="mdi mdi-heart-outline text-muted"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-7 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Mapa de actividades semanal</h4>
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Ordem</th>
+                            <th> Status</th>
+                            <th> Data de alteração</th>
+                            <th> Índice </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td> 1 </td>
+                            <td>Activo</td>
+                            <td>Segunda-feira</td>
+                            <td>
+                              <div class="progress">
+                                <div class="progress-bar bg-gradient-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td> 2 </td>
+                            <td> Inativo</td>
+                            <td>Terça-feira</td>
+                            <td>
+                              <div class="progress">
+                                <div class="progress-bar bg-gradient-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td> 3 </td>
+                            <td> Inativo </td>
+                            <td> Quarta-feira  </td>
+                            <td>
+                              <div class="progress">
+                                <div class="progress-bar bg-gradient-warning" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td> 4 </td>
+                            <td> Em manutenção </td>
+                            <td> Sexta-feira </td>
+                            <td>
+                              <div class="progress">
+                                <div class="progress-bar bg-gradient-info" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td> 5 </td>
+                            <td> Activo </td>
+                            <td> Sábado </td>
+                            <td>
+                              <div class="progress">
+                                <div class="progress-bar bg-gradient-success" role="progressbar" style="width: 75%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td> 5 </td>
+                            <td> Activo </td>
+                            <td> Domingo </td>
+                            <td>
+                              <div class="progress">
+                                <div class="progress-bar bg-gradient-success" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title text-dark">Mapa de actividades no posto</h4>
+                    <div class="add-items d-flex">
+                      <input type="text" class="form-control todo-list-input" placeholder="Quais as sua obrigações hoje?">
+                      <button class="add btn btn-gradient-primary font-weight-bold todo-list-add-btn" id="add-task">Add</button>
+                    </div>
+                    <div class="list-wrapper">
+                      <ul class="d-flex flex-column-reverse todo-list todo-list-custom">
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do painel principal -->
+      </div>
+      <!-- Fim da corpo da página-->
+    </div>
+    <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
+    <script src="../../assets/vendors/chart.js/chart.umd.js"></script>
+    <script src="../../assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <script src="../../assets/js/off-canvas.js"></script>
+    <script src="../../assets/js/misc.js"></script>
+    <script src="../../assets/js/settings.js"></script>
+    <script src="../../assets/js/todolist.js"></script>
+    <script src="../../assets/js/jquery.cookie.js"></script>
+    <script src="../../assets/js/dashboard.js"></script>
+  </body>
+</html>

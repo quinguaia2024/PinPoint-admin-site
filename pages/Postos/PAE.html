@@ -135,7 +135,7 @@
               </div>
             </li>
             <li class="nav-item nav-logout d-none d-lg-block">
-              <a class="nav-link" href="../../index.html">
+              <a class="nav-link" href="../Dashboard/dashboard.html">
                 <i class="mdi mdi-power"></i>
               </a>
             </li>
@@ -163,7 +163,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../../index.html">
+              <a class="nav-link" href="../Dashboard/dashboard.html">
                 <span class="menu-title">Dashboard</span>
                 <i class="mdi mdi-home menu-icon"></i>
               </a>
@@ -204,7 +204,7 @@
               <div class="collapse" id="auth">
                 <ul class="nav flex-column sub-menu">
                   <a class="nav-link" href="../Definições/Definições.html">Configurações</a>
-                  <a class="nav-link" href="../Auth/Login.html">Sair</a>
+                  <a class="nav-link" href="../../index.html">Sair</a>
                 </ul>
               </div>
             </li>
@@ -314,67 +314,7 @@
     <script src="../../assets/js/misc.js"></script>
     <script src="../../assets/js/settings.js"></script>
     <script src="../../assets/js/jquery.cookie.js"></script>
-<script >
-   // Configuração do Firebase (substitua com as suas credenciais)
-   const firebaseConfig = {
-    apiKey: "AIzaSyCvhyniR0OYTHGXKoEqsShn8Q4iPrcZFIA",
-    authDomain: "change-map-status.firebaseapp.com",
-    databaseURL: "https://change-map-status-default-rtdb.firebaseio.com",
-    projectId: "change-map-status",
-    storageBucket: "change-map-status.firebasestorage.app",
-    messagingSenderId: "694811681430",
-    appId: "1:694811681430:web:d84fe0256ab33c197318b7",
-    measurementId: "G-E3M7PCK3JV"
-  };
-
-  // Inicializa o Firebase
-  firebase.initializeApp(firebaseConfig);
-  const database = firebase.database();
-
-  // Função para mostrar mensagem
-  function mostrarMensagem(texto, tipo) {
-    const mensagemDiv = document.getElementById("mensagem");
-    mensagemDiv.textContent = texto;
-    mensagemDiv.className = `alert alert-${tipo}`;
-    mensagemDiv.style.display = "block";
-    
-    // Esconde a mensagem após 3 segundos
-    setTimeout(() => {
-      mensagemDiv.style.display = "none";
-    }, 3000);
-  }
-
-  // Ao carregar a página, verifica se já existe um status salvo
-  document.addEventListener("DOMContentLoaded", function() {
-    database.ref("posto/status").once("value")
-      .then((snapshot) => {
-        if (snapshot.exists()) {
-          const statusSalvo = snapshot.val();
-          document.getElementById("notifications").value = statusSalvo;
-        }
-      })
-      .catch((error) => {
-        console.error("Erro ao carregar status:", error);
-      });
-  });
-
-  // Evento de submit do formulário
-  document.getElementById("statusForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // evita que a página recarregue
-
-    const status = document.getElementById("notifications").value;
-    
-    // Envia para o caminho "posto/status" no banco
-    database.ref("posto/status").set(status)
-      .then(() => {
-        mostrarMensagem("Status salvo com sucesso!", "success");
-      })
-      .catch((error) => {
-        console.error("Erro ao salvar:", error);
-        mostrarMensagem("Erro ao salvar o status.", "danger");
-      });
-  });
-</script>
+<script src="../../assets/js/Changes status PAE.js"></script>
 
   </body>
 </html>

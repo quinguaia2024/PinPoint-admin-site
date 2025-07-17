@@ -27,5 +27,5 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         return;
     }
     sessionStorage.setItem('loggedIn', 'true');
-    window.location.href = "../../index.html";
+    window.location.href = "index.html";
 });
