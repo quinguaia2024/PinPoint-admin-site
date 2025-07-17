@@ -13,13 +13,13 @@
     <link rel="stylesheet" href="../../assets/css/style.css">
     <style>
       :root {
-        --primary-color: #1a8c3a;
+        --primary-color: #1a8c3a; /* Verde escuro elegante */
         --primary-hover: #126b2a;
-        --danger-color: #c82333;
+        --danger-color: #c82333; /* Vermelho suave */
         --danger-hover: #a71d2a;
-        --warning-color: #e0a800;
-        --text-color: #2d3436;
-        --background-color: #f4f6f8;
+        --warning-color: #e0a800; /* Amarelo mais suave */
+        --text-color: #2d3436; /* Cinza escuro para texto */
+        --background-color: #f4f6f8; /* Fundo claro neutro */
         --card-background: #ffffff;
         --border-color: #dfe4ea;
       }
@@ -112,11 +112,9 @@
         border-radius: 8px;
         padding: 15px;
         box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        overflow-x: auto;
       }
       .table th, .table td {
         vertical-align: middle;
-        white-space: nowrap;
       }
       .badge.bg-success {
         background: var(--primary-color) !important;
@@ -194,20 +192,15 @@
         box-shadow: 0 0 5px rgba(26, 140, 58, 0.3);
       }
       /* Responsividade */
-      @media (max-width: 992px) {
-        .status-card {
+      @media (max-width: 768px) {
+        .status-card, .metric-card, .table-responsive {
           padding: 15px;
-          margin: 0 10px 15px;
-        }
-        .metric-card {
-          padding: 12px;
-          margin: 0 10px 12px;
         }
         .status-title, .card-title {
           font-size: 1.1rem;
         }
         .status-value, .metric-value {
-          font-size: 1.3rem;
+          font-size: 1.4rem;
         }
         .status-btn, .btn {
           max-width: 100%;
@@ -219,29 +212,14 @@
         }
         .table th, .table td {
           font-size: 0.85rem;
-          padding: 8px;
         }
         .progress {
           height: 16px;
         }
-        .d-grid.d-md-block {
-          display: flex !important;
-          flex-direction: column;
-          gap: 10px !important;
-        }
-        .btn {
-          width: 100%;
-          margin-right: 0 !important;
-        }
       }
-      @media (max-width: 768px) {
-        .status-card {
+      @media (max-width: 576px) {
+        .status-card, .metric-card, .table-responsive {
           padding: 12px;
-          margin: 0 8px 12px;
-        }
-        .metric-card {
-          padding: 10px;
-          margin: 0 8px 10px;
         }
         .status-icon {
           font-size: 1.8rem;
@@ -261,97 +239,15 @@
         }
         .table th, .table td {
           font-size: 0.8rem;
-          padding: 6px;
+        }
+        .table-responsive {
+          font-size: 0.8rem;
         }
         .progress {
           height: 14px;
         }
-        .table-responsive {
-          padding: 10px;
-        }
-      }
-      @media (max-width: 576px) {
-        .status-card {
-          padding: 10px;
-          margin: 0 5px 10px;
-        }
-        .metric-card {
-          padding: 8px;
-          margin: 0 5px 8px;
-        }
-        .status-icon {
-          font-size: 1.6rem;
-        }
-        .status-title, .card-title {
-          font-size: 0.9rem;
-        }
-        .status-value, .metric-value {
-          font-size: 1.1rem;
-        }
-        .status-btn, .btn {
-          padding: 6px;
-          font-size: 0.8rem;
-        }
-        .last-update, .metric-title {
-          font-size: 0.7rem;
-        }
-        .table th, .table td {
-          font-size: 0.75rem;
-          padding: 5px;
-        }
-        .progress {
-          height: 12px;
-        }
-        .table-responsive {
-          padding: 8px;
-        }
         .modal-dialog {
-          margin: 8px;
-          max-width: 95%;
-        }
-        .modal-body {
-          padding: 12px;
-        }
-        .modal-footer, .modal-header {
-          padding: 10px;
-        }
-      }
-      @media (max-width: 400px) {
-        .status-card {
-          padding: 8px;
-          margin: 0 3px 8px;
-        }
-        .status-icon {
-          font-size: 1.4rem;
-        }
-        .status-title, .card-title {
-          font-size: 0.85rem;
-        }
-        .status-value, .metric-value {
-          font-size: 1rem;
-        }
-        .status-btn, .btn {
-          padding: 5px;
-          font-size: 0.75rem;
-        }
-        .last-update, .metric-title {
-          font-size: 0.65rem;
-        }
-        .table th, .table td {
-          font-size: 0.7rem;
-          padding: 4px;
-        }
-        .progress {
-          height: 10px;
-        }
-        .table-responsive {
-          padding: 6px;
-        }
-        .modal-body {
-          padding: 10px;
-        }
-        .modal-footer, .modal-header {
-          padding: 8px;
+          margin: 10px;
         }
       }
     </style>
@@ -512,16 +408,14 @@
             </div>
           </li>
           <li class="nav-item">
-          <a class="nav-link" href="../Mapas/Mapa.html">
-            <span class="menu-title">Mapa</span>
-            <i class="menu-icon"></i>
-            <i class="fas fa-map-marked-alt"></i>
-          </a>
-        </li>
+            <a class="nav-link" href="../Mapas/Mapa.html">
+              <span class="menu-title">Mapa</span>
+              <i class="fas fa-map-marked-alt"></i>
+            </a>
+          </li>
           <li class="nav-item active">
             <a class="nav-link" href="../Relatorio/Relatorio.html">
               <span class="menu-title">Relatório</span>
-                <i class="menu-icon"></i>
               <i class="fas fa-chart-bar"></i>
             </a>
           </li>
@@ -564,19 +458,19 @@
                   </div>
                 </div>
                 <div class="row mt-3">
-                  <div class="col-12 col-md-4 mb-3">
+                  <div class="col-md-4">
                     <div class="metric-card">
                       <div class="metric-value">42</div>
                       <div class="metric-title">Abastecimentos Hoje</div>
                     </div>
                   </div>
-                  <div class="col-12 col-md-4 mb-3">
+                  <div class="col-md-4">
                     <div class="metric-card">
                       <div class="metric-value">1,850 L</div>
                       <div class="metric-title">Volume Vendido</div>
                     </div>
                   </div>
-                  <div class="col-12 col-md-4 mb-3">
+                  <div class="col-md-4">
                     <div class="metric-card">
                       <div class="metric-value">AKZ 92,400</div>
                       <div class="metric-title">Faturamento</div>
@@ -646,7 +540,26 @@
                     </div>
                   </div>
                 </div>
-              
+                <div class="row mt-4">
+                  <div class="col-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title mb-3">Ações Rápidas</h5>
+                        <div class="d-grid gap-2 d-md-block">
+                          <button class="btn btn-primary me-2">
+                            <i class="fas fa-bell"></i> Solicitar Reabastecimento
+                          </button>
+                          <button class="btn btn-outline-primary me-2">
+                            <i class="fas fa-tools"></i> Chamar Manutenção
+                          </button>
+                          <button class="btn btn-outline-secondary">
+                            <i class="fas fa-history"></i> Ver Histórico
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -687,7 +600,7 @@
     <script src="../../assets/js/select2.js"></script>
     <script>
       function openModal(modalId) {
-        const modal = new bootstrap.Modal(document.getElementById(modalid));
+        const modal = new bootstrap.Modal(document.getElementById(modalId));
         modal.show();
       }
       function updateStatus() {
